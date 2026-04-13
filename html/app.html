@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Guessing Game</title>
+
+
+<style>
+/* Page background */
+body {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  margin: 0;
+  padding: 40px;
+  color: #333;
+}
+
+/* Game container */
+.game-box {
+  background: white;
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Title */
+h1 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+/* Instructions */
+p {
+  font-size: 1.1rem;
+}
+
+/* Input field */
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 80%;
+  margin-top: 10px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #0077b6;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #0077b6;
+  transform: translateY(-2px);
+}
+
+/* Result text */
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Link */
+a {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  background: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #e63946;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="game-box">
+  
+<h1>Number Guessing Game</h1>
+<p>Guess a number between 1 and 10</p>
+
+<input type="number" id="guess">
+<button onclick="checkGuess()">Submit</button>
+
+<p id="result"></p>
+</div>
+
+<script>
+let number = Math.floor(Math.random() * 10) + 1;
+
+function checkGuess() {
+  let guess = document.getElementById("guess").value;
+  let result = document.getElementById("result");
+
+  if (guess == number) {
+    result.innerHTML = "Correct!";
+  } else {
+    result.innerHTML = "Try again!";
+  }
+}
+</script>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+  <a href="../Homepage.html">Homepage</a>
+  
+</body>
+</html>

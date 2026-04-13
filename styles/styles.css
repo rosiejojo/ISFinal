@@ -1,0 +1,57 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff5f5, #f0fff4);
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #ffb3c1, #bde0fe);
+  padding: 80px 20px;
+  border-radius: 0 0 30px 30px;
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Section styling */
+.section {
+  margin-top: 60px;
+}
+
+/* Cards (for links to pages) */
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* About section */
+.about-img {
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+}

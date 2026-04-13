@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Name Header */
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #1a73e8;
+  border-bottom: 3px solid #1a73e8;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* Section Headers */
+h3, h4 {
+  margin-top: 30px;
+  color: #34495e;
+  font-weight: 600;
+  position: relative;
+}
+
+h3::after, h4::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #1a73e8;
+  margin-top: 5px;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #f8fbff;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-left: 5px solid #1a73e8;
+  border-radius: 8px;
+  line-height: 1.6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for subtle interactivity */
+ul li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Link styling */
+a {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: #1a73e8;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+a:hover {
+  background-color: #155ab6;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,115 @@
+/* General Page Style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff5f5, #f0fff4);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main Title */
+h1 {
+  font-size: 2.8rem;
+  color: #e63946; /* strawberry red */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Section Headers */
+h2 {
+  color: #2a9d8f; /* fresh green */
+  margin-top: 40px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #2a9d8f;
+  margin: 8px auto;
+  border-radius: 5px;
+}
+
+/* Lists */
+ol {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ol > li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+  list-style-position: inside;
+  font-weight: 500;
+}
+
+/* Nested list (descriptions) */
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+ul li {
+  font-weight: normal;
+  color: #555;
+}
+
+/* Image styling */
+img {
+  margin-top: 20px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Video */
+iframe {
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Tableau container */
+.tableauPlaceholder {
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Links */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #ff7b54;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: #e85d3f;
+  transform: translateY(-2px);
+}
+
+/* Back to top spacing */
+p {
+  margin-top: 40px;
+}
